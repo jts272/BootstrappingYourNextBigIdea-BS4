@@ -13,6 +13,7 @@
       integrity="sha512-BxQjx52Ea/sanKjJ426PAhxQJ4BPfahiSb/ohtZ2Ipgrc5wyaTSgTwPhhZ/xC66vvg+N4qoDD1j0VcJAqBTjhQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bs-overrides.css" />
   </head>
 
   <body>
@@ -20,10 +21,10 @@
       <a href="/" class="navbar-brand">Whiskey Drop</a>
       <ul class="navbar-nav mr-auto">
         <li class="active nav-item mr-2">
-          <a href="/" class="nav-link">Home</a>
+          <a href="/" class="nav-link font-weight-bold">Home</a>
         </li>
         <li class="nav-item mr-2">
-          <a href="/about" class="nav-link">About</a>
+          <a href="/about" class="nav-link font-weight-bold">About</a>
         </li>
         <li class="nav-item mr-2 d-block d-sm-none">
           <a href="/login" class="nav-link">Sign In / Sign Up</a>
@@ -41,7 +42,8 @@
         <div class="col-12">
           <div class="alert alert-warning">
             <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month
-            subscription for 6! <a href="">See here for details!</a>
+            subscription for 6!
+            <a href="" style="color: #006bdd">See here for details!</a>
           </div>
         </div>
       </div>
@@ -83,6 +85,7 @@
             <div class="media">
               <div class="d-none d-sm-block">
                 <img
+                  style="object-fit: cover"
                   src="images/girl-image.png"
                   alt="Girl drinker"
                   class="rounded-circle mr-3"
@@ -106,6 +109,7 @@
             <div class="media">
               <div class="d-none d-sm-block">
                 <img
+                  style="object-fit: cover"
                   src="images/guy-image.png"
                   alt="Guy drinker"
                   class="rounded-circle mr-3"
