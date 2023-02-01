@@ -2,6 +2,11 @@ nav * {
   color: black !important;
 }
 
+#login-sm,
+#login-md {
+  color: #006ee3 !important;
+}
+
 .jumbotron {
   background-color: f1f1f1;
   border: 2px solid black;
