@@ -16,7 +16,10 @@
       integrity="sha512-BxQjx52Ea/sanKjJ426PAhxQJ4BPfahiSb/ohtZ2Ipgrc5wyaTSgTwPhhZ/xC66vvg+N4qoDD1j0VcJAqBTjhQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="bs-overrides.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -72,7 +75,8 @@
         <a href="/login" id="login-sm">Sign In / Sign Up</a>
       </div>
     </nav>
-    <article class="container mt-3">
+    <!-- Alert -->
+    <!-- <div class="container alert-container">
       <div class="row d-none d-sm-block">
         <div class="col-12">
           <div class="alert alert-warning">
@@ -81,12 +85,19 @@
             <a href="#" style="color: #006bdd">See here for details!</a>
           </div>
         </div>
-      </div>
-      <!-- Callout -->
+      </div> -->
+    <!-- /Alert -->
+
+    <!-- Callout -->
+    <div class="container-fluid callout-container">
+      <div class="opaque-overlay">&nbsp;</div>
       <div class="row">
         <div class="col-12">
           <section class="callout jumbotron text-center">
-            <h1>The finest whiskeys delivered to your doorstep.</h1>
+            <h1 class="jumbotron-header">
+              The finest whiskeys delivered to your doorstep.
+            </h1>
+            <hr class="block-divider block-divider--orange" />
             <p class="lead">
               Sign up today to start receiving the world's best whiskeys every
               month. <s class="d-none d-sm-inline">€19.99</s>
@@ -97,7 +108,7 @@
             </p>
             <p>
               <button
-                class="btn btn-lg btn-success"
+                class="btn btn-lg btn-success btn--cta btn--orange"
                 data-toggle="modal"
                 data-target="#signUpModal">
                 Sign Up!
@@ -112,10 +123,13 @@
           </section>
         </div>
       </div>
-      <!-- /.callout -->
-      <hr />
+    </div>
+    <!-- /.callout -->
 
-      <!-- Quotes -->
+    <!-- /Alert -->
+
+    <!-- Quotes -->
+    <div class="container quotes-container">
       <section class="quotes">
         <div class="row">
           <div class="col-12 my-5">
@@ -170,10 +184,11 @@
           </div>
         </div>
       </section>
-      <!-- /.quotes -->
-      <hr />
+    </div>
+    <!-- /Quotes -->
 
-      <!-- Features -->
+    <!-- Features -->
+    <div class="container features-container">
       <section class="features">
         <div class="row">
           <div class="col-12 my-5">
@@ -226,8 +241,8 @@
           </div>
         </div>
       </section>
-      <!-- /.features -->
-    </article>
+    </div>
+    <!-- /Features -->
 
     <!-- Modal -->
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
@@ -273,7 +288,6 @@
                   id="repeatPassword"
                   placeholder="Repeat Password" />
               </div>
-
               <div class="form-inline">
                 <button type="submit" class="btn btn-success">Submit</button>
                 <button
@@ -288,6 +302,7 @@
         </div>
       </div>
     </div>
+    <!-- /Modal -->
 
     <!-- Scripts for Bootstrap 4 JS -->
     <script
