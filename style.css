@@ -27,6 +27,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container-wrapper {
+}
+
+.container-wrapper--orange {
+  background-color: #d9300c;
+  color: white;
+}
+
 /* Navbar */
 
 .navalert-container {
@@ -68,6 +76,7 @@ body {
   padding: 5px 15px;
   background-color: #eec802;
   border-color: #eec802;
+  color: #463504;
 }
 
 .callout-container {
@@ -107,14 +116,26 @@ body {
   width: 75px;
   height: 5px;
   border: 0;
+  background-color: #444;
 }
 
 .block-divider--orange {
-  background-color: #f05f40;
+  background-color: #d9300c;
+}
+
+.block-divider--white {
+  background-color: white;
 }
 
 .block-divider--short {
   width: 35px;
+}
+
+/* Content Containers */
+
+.content-container {
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 /* Jumbotron */
@@ -141,6 +162,22 @@ body {
 .features-container {
 }
 
+/* Page Headers */
+
+.page-header {
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+.page-header h2 {
+  margin-top: 0;
+}
+
+.quotes .page-header {
+  margin-bottom: 25px;
+}
+
 /* Buttons */
 
 .btn--cta {
@@ -151,8 +188,8 @@ body {
 
 .btn--orange {
   color: white;
-  background-color: #f05f40;
-  border-color: #f05f40;
+  background-color: #d9300c;
+  border-color: #d9300c;
 }
 
 .btn--orange:hover,
@@ -161,4 +198,25 @@ body {
 .btn--orange:active:focus {
   background-color: #df4929;
   border-color: #df4929;
+}
+
+.feature {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature i {
+  margin-bottom: 20px;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.feature .btn {
+  background-color: white;
+  border-color: white;
+  border-radius: 15px;
+  min-width: 100px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #d9300c;
 }
