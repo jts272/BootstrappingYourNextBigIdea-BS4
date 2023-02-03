@@ -1,13 +1,13 @@
 /* BOOTSTRAP OVERRIDES */
 
-nav * {
+/* nav * {
   color: black !important;
-}
+} */
 
-#login-sm,
+/* #login-sm,
 #login-md {
   color: #006ee3 !important;
-}
+} */
 
 .jumbotron {
   background-color: transparent;
@@ -27,7 +27,47 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.alert-container {
+/* Navbar */
+
+.navalert-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 1;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+  width: 100%;
+  background-color: rbga(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-toggler {
+  border: 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+  font-weight: bold;
+}
+
+.alert-container .col-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.site-wide-alert {
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 5px 15px;
+  background-color: #eec802;
+  border-color: #eec802;
 }
 
 .callout-container {
